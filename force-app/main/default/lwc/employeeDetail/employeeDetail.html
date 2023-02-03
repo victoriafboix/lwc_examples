@@ -1,14 +1,9 @@
 <template>
-    <lightning-card title="EmployeeInfo">
-        <div class="slds-var-m-around_medium">
-            <p>Employee Name: {name}</p>
-            <p>Employee Age: {age}</p>
-            <p>Employee Salari: {salary}</p>
-
-            <lightning-input label="Enter the name" value={name} onchange={nameHandler}></lightning-input>
-            <lightning-input label="Enter the salary" value={salary} onchange={salaryHandler}></lightning-input>
-            <lightning-input label="Enter the age" value={age} onchange={ageHandler}></lightning-input>
-
-        </div>
-    </lightning-card>
+    <div class="slds-var-p-around_medium lgc-bg">
+        <lightning-tile label={empDetail.empName}>
+            <p class="slds-truncate" title={empDetail.empAddress}>
+                EmployeeAddress: {empDetail.empAddress}
+            </p>
+        </lightning-tile>
+    </div>
 </template>

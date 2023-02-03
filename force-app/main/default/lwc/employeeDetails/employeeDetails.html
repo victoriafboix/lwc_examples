@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Employee Details">
+        <ul>
+            <template for:each={empDetails} for:item="emp">
+               <li key={emp.empName} style="padding: 10px"></li>
+                <c-employee-detail  key={emp.empName} emp-detail={emp}> </c-employee-detail>
+
+            </template>
+        </ul>
+
+    </lightning-card>
+</template>

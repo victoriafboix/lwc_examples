@@ -1,0 +1,7 @@
+.lgc-bg {
+    background-color: aqua;
+}
+
+:host {
+    display: table-row;
+  }

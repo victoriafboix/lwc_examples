@@ -4,7 +4,7 @@ export default class BoolParent extends LightningElement {
 
     constructor() {
         super();
-        console.log("construcor on the parent is called");
+        console.log("constructor on the parent is called");
     }
 
     connectedCallback() {

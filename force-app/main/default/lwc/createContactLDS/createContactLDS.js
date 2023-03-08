@@ -20,7 +20,7 @@ export default class CreateContactLDS extends LightningElement {
         const fields={"LastName":this.contactName, "Phone":this.contactPhone,"Email":this.contactEmail};
         const recordInput={apiName:"Contact",fields};
         createRecord(recordInput).then(response=>{
-            console.log("Contact has been created succesfully " +response.id);
+            console.log("Contact: " +this.contactName+ " has been created succesfully " +response.id);
         }).catch(error=>{
             console.log("Error in creating contact: ",error.body.message)
         });
